@@ -50,7 +50,7 @@ for x in range(3):
             f"{ai_name.capitalize()} Won the Round! The score is now {name}  : {user_points} | {ai_name} : {computer_points}")
     else:
         print(
-            f"This round's a Tie! Both of you chose {user_hand.capitalize()}")
+            f"This round's a Tie! Both of you chose {user_hand.capitalize()} The score is now {name}  : {user_points} | {ai_name} : {computer_points}")
     print(
         f"You chose {user_hand.capitalize()}, Computer chose {computer_hand.capitalize()}")
 
@@ -67,11 +67,9 @@ for x in range(3):
             winner = None
             print(
                 f"It's a Tie! The Final Score is {user_points}:{computer_points}")
-
-        play_again_ini = input(
-            "Game Over! Do you want to play again? (Type Y/N): ")
-        play_again = play_again_ini.lower()
-
-       # if play_again == "y":
-
+        # play_again_ini = input(
+        #     "Game Over! Do you want to play again? (Type Y/N): ")
+        # play_again = play_again_ini.lower()
+        # if play_again == "y":
+        print("Game Over!")
         break
