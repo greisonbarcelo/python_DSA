@@ -1,0 +1,29 @@
+class Book():
+    def __init__(self, title, author, pages, year, status, genre):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        self.year = year
+        self.status = status
+        self.genre = genre
+
+    def read(self):
+        print(f"Now reading the book {self.title}")
+
+    def details(self):
+        print(f"This {self.title} book wrritten by {self.author} with {self.pages} pages written in {self.year} under the genre of {self.genre} in which you're {self.status} reading. ")
+
+
+book_1 = Book("Praybeyt benjamin", "Vice ganda",
+              "299", "2012", "inprog", "comedy")
+book_2 = Book("Narnia", "IDK",
+              "4817", "2008", "completed", "adventure")
+# print(book_1.title)
+# print(book_1.author)
+# print(book_1.pages)
+# print(book_1.year)
+# print(book_1.status)
+# print(book_1.genre)
+
+book_2.read()
+book_2.details()
