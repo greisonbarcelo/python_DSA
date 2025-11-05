@@ -72,6 +72,6 @@ for x in range(3):
             "Game Over! Do you want to play again? (Type Y/N): ")
         play_again = play_again_ini.lower()
 
-        if play_again == "y":
+       # if play_again == "y":
 
         break
