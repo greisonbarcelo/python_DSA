@@ -1,12 +1,22 @@
-mylist = [64, 34, 25, 12, 22, 11, 90, 5]
-n = len(mylist)
-
+nums = [5, 2, 9, 1, 5, 6]
+n = len(nums)
+# ascending insertion sort
 for i in range(1, n):
-    insert_index = 1
-    current_value = mylist.pop(i)
+    insert_index = i
+    current_value = nums.pop(i)
     for j in range(i-1, -1, -1):
-        if mylist[j] > current_value:
+        if nums[j] > current_value:
             insert_index = j
-    mylist.insert(insert_index, current_value)
+    nums.insert(insert_index, current_value)
 
-print(mylist)
+# descending insertion sort
+for i in range(1, n):
+    insert_index = i
+    current_value = nums.pop(i)
+    for j in range(i-1, -1, -1):
+        if nums[j] < current_value:
+            insert_index = j
+    nums.insert(insert_index, current_value)
+
+
+print(nums)
