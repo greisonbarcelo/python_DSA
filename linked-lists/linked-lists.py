@@ -5,10 +5,11 @@ class Node:
 
 
 def traverseAndPrint(head):
-    currentNode = head
-    while currentNode:
+    currentNode = head  # currentNode = node1 = 7
+    while currentNode:  # while currentNode is not None/Null print the data
         print(currentNode.data, end=" -> ")
-        currentNode = currentNode.next
+        currentNode = currentNode.next  # after printing currentNode, move to the next node
+    # triggers once it reaches the tail of the node and nothing after it
     print("null")
 
 
@@ -23,4 +24,5 @@ node2.next = node3
 node3.next = node4
 node4.next = node5
 
+# calls the 'head' of the node list in traverseAndPrint function
 traverseAndPrint(node1)
