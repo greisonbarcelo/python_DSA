@@ -12,20 +12,23 @@ def traverseAndPrint(head):
     print("null")
 
 
-def deleteSpecificNode(head, nodeToDelete):
-    if head == nodeToDelete:
-        return head.next
+def deleteSpecificNode(head, nodeToDelete):  # (node1, node4)
+    if head == nodeToDelete:  # node1 == node4 : False
+        return head.next  # skip
 
-    currentNode = head
+    currentNode = head  # currentNode = node1
     while currentNode.next and currentNode.next != nodeToDelete:
-        currentNode = currentNode.next
+        # node2 and node2 != node4 : True
+        # node3 and node3 != node4 : True
+        # node3 and node4 != node4 : False, stop loop
+        currentNode = currentNode.next  # currentNode = node2 -> node3
 
-    if currentNode.next is None:
-        return head
+    if currentNode.next is None:  # node3 is None : False
+        return head  # skip
 
-    currentNode.next = currentNode.next.next
+    currentNode.next = currentNode.next.next  # node3 = node5
 
-    return head
+    return head  # return
 
 
 node1 = Node(7)
