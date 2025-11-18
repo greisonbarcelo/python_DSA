@@ -46,4 +46,4 @@ traverseAndPrint(node1)  # traverse through the linked list normally
 node1 = deleteSpecificNode(node1, node4)
 
 print("\nAfter deletion:")
-traverseAndPrint(node1)
+traverseAndPrint(node1)  # traverse after deleting a node
